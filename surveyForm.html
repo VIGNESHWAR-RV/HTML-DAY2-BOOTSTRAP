@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyForm-task</title>
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        .fa {
+         font-size: 36px;
+         color: rgb(163, 121, 13);
+         background-color: white;
+         border: none;
+           }
+        .checked {
+         color: orange;
+           }
+    </style>
+</head>
+<body>
+    <div class="container-fluid m-2">
+      <field>
+        <h5><b class="pl-3">Name</b><sup style="color: red;">*</sup> </h5>
+       <div class="row col-md-8">
+           <div class="col">
+             <input type="text" class="form-control">
+             <caption>First Name</caption>
+           </div>
+           <div class="col">
+            <input type="text" class="form-control">
+            <caption>Last Name</caption>
+           </div>
+        </div><br>
+        <h5><b class="pl-3">Email</b><sup style="color: red;">*</sup> </h5>
+        <div class="row col-md-8">
+            <div class="col">
+              <input type="text" class="form-control">
+            </div>
+        </div><br>
+        <h5><b class="pl-3">Your Experience</b><sup class="red" style="color: red;">*</sup> </h5>
+          <div class="pl-3">
+            <button class="fa fa-star checked"></button>
+            <button class="fa fa-star checked"></button>
+            <button class="fa fa-star checked"></button>
+            <button class="fa fa-star checked"></button>
+            <button class="fa fa-star"></button>
+          </div>
+            <p class="pl-3 text-muted">Overall, how would you rate your experience with us?</p>
+            <h5><b class="pl-3">How satisfied are you with</b><sup class="red" style="color: red;">*</sup> </h5>
+            <table class="table table-striped table-borderless table-hover ml-3">
+                <thead>
+                    <tr>
+                    <th class="pr-5 pl-5 text-white">Type</th>
+                    <th class="pl-1.8">Very Unsatisfied</th>
+                    <th class="pl-1.8">Unsatisfied</th>
+                    <th class="pl-1.8">Nuetral</th>
+                    <th class="pl-1.8">Satisfied</th>
+                    <th class="pl-1.8">Very Satisfied</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Purchase</td>
+                    <td><div class="form-check form-check-inline ml-4 pl-5 pr-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                    </div></td>
+                   <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option3">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option4">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio5" value="option5">
+                    </div></td>
+                    </tr>
+                    <tr>
+                    <td>Service</td>
+                    <td><div class="form-check form-check-inline ml-4 pl-5 pr-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+                    </div></td>
+                  </tr>
+                    <tr>
+                    <td>Company Overall</td>
+                    <td><div class="form-check form-check-inline ml-4 pl-5 pr-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+                    </div></td>
+                   <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio4" value="option4">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5" value="option5">
+                    </div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5><b class="pl-3">How likely you are to</b><sup class="red" style="color: red;">*</sup> </h5>
+            <table class="table table-striped table-borderless table-hover ml-3">
+                <thead>
+                    <tr>
+                    <th class="pr-5 pl-5 text-white">Type</th>
+                    <th class="pl-1.8">Very Unlikely</th>
+                    <th class="pl-1.8">Unlikely</th>
+                    <th class="pl-1.8">Nuetral</th>
+                    <th class="pl-1.8">Likely</th>
+                    <th class="pl-1.8">Very Likely</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Buy from us again</td>
+                    <td><div class="form-check form-check-inline ml-4 pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="option2">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio3" value="option3">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="option4">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio5" value="option5">
+                    </div></td>
+                    </tr>
+                    <tr>
+                    <td>Recommed our<br>product to others</td>
+                      <td><div class="form-check form-check-inline ml-4 pl-4 pr-4 pt-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio1" value="option1">
+                      </div></td>
+                      <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio2" value="option2">
+                        </div></td>
+                     <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio3" value="option3">
+                        </div></td>
+                      <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio4" value="option4">
+                        </div></td>
+                      <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="option5">
+                      </div></td>
+                  </tr>
+                    <tr>
+                    <td>Recommend our<br>company to others</td>
+                    <td><div class="form-check form-check-inline ml-4 pl-4 pr-4 pt-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="option2">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio3" value="option3">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio4" value="option4">
+                    </div></td>
+                    <td><div class="form-check form-check-inline pl-4 pr-4 pt-3">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio5" value="option5">
+                    </div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5><b class="pl-3">Additional comments or suggestions</b></h5>
+            <textarea class="ml-3" name="comments" id="comment" rows="6" style="width: 100%;"></textarea>
+            <button type="submit" class="btn btn-secondary mt-3 ml-3">Submit</button>
+        </field>
+    </div>
+</body>
+</html>
